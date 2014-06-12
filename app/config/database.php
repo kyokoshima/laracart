@@ -46,23 +46,25 @@ return array(
 
 	'connections' => array(
 
+		/*
 		'sqlite' => array(
 			'driver'   => 'sqlite',
 			'database' => __DIR__.'/../database/production.sqlite',
 			'prefix'   => '',
 		),
+		*/
 
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'forge',
-			'username'  => 'forge',
-			'password'  => '',
+			'database'  => 'laravel',
+			'username'  => 'laravel',
+			'password'  => 'pass',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
 		),
-
+		/*
 		'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',
@@ -82,7 +84,7 @@ return array(
 			'password' => '',
 			'prefix'   => '',
 		),
-
+		*/
 	),
 
 	/*
