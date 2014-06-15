@@ -3,84 +3,105 @@
 class ProductsController extends \BaseController {
 
 	/**
-	 * Display a listing of the resource.
-	 * GET /products
+	 * Display a listing of products
 	 *
 	 * @return Response
 	 */
 	public function index()
 	{
-		//
+		$products = Product::all();
+
+		return View::make('products.index', compact('products'));
 	}
 
 	/**
-	 * Show the form for creating a new resource.
-	 * GET /products/create
+	 * Show the form for creating a new product
 	 *
 	 * @return Response
 	 */
 	public function create()
 	{
-		//
+		return View::make('products.create');
 	}
 
 	/**
-	 * Store a newly created resource in storage.
-	 * POST /products
+	 * Store a newly created product in storage.
 	 *
 	 * @return Response
 	 */
 	public function store()
 	{
-		//
+		$validator = Validator::make($data = Input::all(), Product::$rules);
+
+		if ($validator->fails())
+		{
+			return Redirect::back()->withErrors($validator)->withInput();
+		}
+
+		Product::create($data);
+
+		return Redirect::route('products.index');
 	}
 
 	/**
-	 * Display the specified resource.
-	 * GET /products/{id}
+	 * Display the specified product.
 	 *
 	 * @param  int  $id
 	 * @return Response
 	 */
 	public function show($id)
 	{
-		//
+		$product = Product::findOrFail($id);
+
+		return View::make('products.show', compact('product'));
 	}
 
 	/**
-	 * Show the form for editing the specified resource.
-	 * GET /products/{id}/edit
+	 * Show the form for editing the specified product.
 	 *
 	 * @param  int  $id
 	 * @return Response
 	 */
 	public function edit($id)
 	{
-		//
+		$product = Product::find($id);
+
+		return View::make('products.edit', compact('product'));
 	}
 
 	/**
-	 * Update the specified resource in storage.
-	 * PUT /products/{id}
+	 * Update the specified product in storage.
 	 *
 	 * @param  int  $id
 	 * @return Response
 	 */
 	public function update($id)
 	{
-		//
+		$product = Product::findOrFail($id);
+
+		$validator = Validator::make($data = Input::all(), Product::$rules);
+
+		if ($validator->fails())
+		{
+			return Redirect::back()->withErrors($validator)->withInput();
+		}
+
+		$product->update($data);
+
+		return Redirect::route('products.index');
 	}
 
 	/**
-	 * Remove the specified resource from storage.
-	 * DELETE /products/{id}
+	 * Remove the specified product from storage.
 	 *
 	 * @param  int  $id
 	 * @return Response
 	 */
 	public function destroy($id)
 	{
-		//
+		Product::destroy($id);
+
+		return Redirect::route('products.index');
 	}
 
 }

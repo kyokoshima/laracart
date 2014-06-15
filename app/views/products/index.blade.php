@@ -1,1 +1,5 @@
-/home/vagrant/laracart/app/views/products/index.blade.php
+@extends('layouts.master')
+
+@section('content')
+	<p>ああああ</p>
+@stop

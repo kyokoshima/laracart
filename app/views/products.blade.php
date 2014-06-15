@@ -1,1 +1,1 @@
-/home/vagrant/laracart/app/views/products.blade.php
+@extends('layouts.master')
