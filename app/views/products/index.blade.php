@@ -1,5 +1,5 @@
 @extends('layouts.master')
 
 @section('content')
-	<p>ああああ</p>
+	<p>あああああ</p>
 @stop
