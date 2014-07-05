@@ -1,1 +1,0 @@
-/home/vagrant/laracart/app/views/products/show.blade.php
