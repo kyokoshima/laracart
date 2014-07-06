@@ -7,7 +7,7 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 20px;
@@ -79,8 +79,8 @@
         border-radius: 0 3px 3px 0;
       }
     </style>
-    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
-
+    <!-- <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+    -->
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
@@ -155,8 +155,11 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<!--
+		<script src="../assets/js/bootstrap-transition.js"></script>
+
     <script src="../assets/js/bootstrap-alert.js"></script>
     <script src="../assets/js/bootstrap-modal.js"></script>
     <script src="../assets/js/bootstrap-dropdown.js"></script>
@@ -168,7 +171,7 @@
     <script src="../assets/js/bootstrap-collapse.js"></script>
     <script src="../assets/js/bootstrap-carousel.js"></script>
     <script src="../assets/js/bootstrap-typeahead.js"></script>
-
+		-->
   
 
 </body>
