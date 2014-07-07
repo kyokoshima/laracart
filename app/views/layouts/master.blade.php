@@ -29,9 +29,14 @@
   </head>
 
   <body>
-
     <div class="container">
-
+			<div class="row">
+				<div class="col-md4 logo">
+					<a href="/">
+						<h1>Laracart</h1>
+					</a>
+				</div>
+			</div>
       <div class="masthead">
         <h3 class="text-muted">Project name</h3>
         <ul class="nav nav-justified">
