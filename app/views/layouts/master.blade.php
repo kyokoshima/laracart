@@ -31,12 +31,37 @@
   <body>
     <div class="container">
 			<div class="row">
-				<div class="col-md4 logo">
+				<div class="col-md-4 logo">
 					<a href="/">
 						<h1>Laracart</h1>
 					</a>
 				</div>
 			</div>
+			<nav class="navbar navbar-inverse" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-togggle="collapse" data-target="#collapse-target">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<a class="navbar-brand" href="#">Brand</a>
+					</div>
+				</div>
+				<div class="collapse navbar-collapse" id="collapse-target">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">Link</a>
+						</li>
+						<li>
+							<a href="#">Link</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
       <div class="masthead">
         <h3 class="text-muted">Project name</h3>
         <ul class="nav nav-justified">
