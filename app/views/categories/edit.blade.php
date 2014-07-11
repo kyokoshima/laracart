@@ -1,0 +1,1 @@
+/home/vagrant/laracart/app/views/categories/edit.blade.php
