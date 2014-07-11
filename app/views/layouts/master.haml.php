@@ -40,13 +40,15 @@
 							%span.icon-bar
 							%span.icon-bar
 							%span.icon-bar
-							%a.navbar-brand(href="#") Brand
-				.collapse.navbar-collapse#collapse-target
-					%ul.nav.navbar-nav
-						%li.active
-							%a(href="#") Home
-							%a(href="#") Link
-							%a(href="#") Link
+						%a.navbar-brand(href="#") Brand
+					.collapse.navbar-collapse#collapse-target
+						%ul.nav.navbar-nav
+							%li.active
+								%a(href="#") Home
+							%li
+								%a(href="#") Link
+							%li
+								%a(href="#") Link
 			.container
 				.row
 					.col-sm-3
