@@ -123,6 +123,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
 		'Bkwld\LaravelHaml\ServiceProvider',
+		'Barryvdh\Debugbar\ServiceProvider',
 	),
 
 	/*

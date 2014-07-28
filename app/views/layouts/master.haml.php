@@ -10,7 +10,7 @@
 
 		/ Bootstrap core CSS
 		%link(href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet")
-		/ Custom styles for this template 
+		/ Custom styles for this template
 		%link(href="justified-nav.css" rel="stylesheet")
 
 		/ Just for debugging purposes. Don't actually copy these 2 lines!
@@ -22,7 +22,7 @@
 		/ IE10 viewport hack for Surface/desktop Windows 8 bug
 		%script(src="../../assets/js/ie10-viewport-bug-workaround.js")
 
-		/ HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries 
+		/ HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
 		/[if lt IE 9]
 			%script(src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js")
 			%script(src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js")
@@ -65,7 +65,7 @@
 							.col-lg-4
 								%h2 Safari bug warning!
 								%p.text-danger As of v7.0.1, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing.
-								%p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. 
+								%p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
 								%p
 									%a.btn.btn-primary(href="#" role="button") View details Â
 							.col-lg-4
@@ -78,13 +78,13 @@
 								%p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
 								%p
 									%a.btn.btn-primary(href="#" role="button") View details Â
-			/ Site footer 
+			/ Site footer
 			.footer
 				%p Â© Company 201
 
-		/ 
+		/
 			Bootstrap core JavaScript
 			==================================================
 		/  Placed at the end of the document so the pages load faster
-  
+
 
