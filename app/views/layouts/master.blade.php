@@ -69,7 +69,6 @@
 					<div class="col-sm-9">
             @yield('content')
 
-
       		</div>
 				</div>
 			</div>

@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
 @section('content')
-	<p>あああああ</p>
+	<div class="row product-list">
+	@foreach ($products as $product)
+			{{ $product->name }}
+	@endforeach
+	</div>
 @stop
