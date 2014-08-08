@@ -18,4 +18,6 @@ Route::get('/', function()
 
 Route::resource('products', 'ProductsController');
 
-Route::group(array('namespace' => 'Admin'), function{});
+Route::group(array('namespace' => 'Admin', 'prefix' => 'admin'), function(){
+	Route::resource('products', 'ProductsController');
+});
